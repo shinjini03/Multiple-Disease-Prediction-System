@@ -1,4 +1,3 @@
-
 import pickle
 import streamlit as st
 from streamlit_option_menu import option_menu
@@ -6,11 +5,11 @@ from streamlit_option_menu import option_menu
 
 # loading the saved models
 
-diabetes_model = pickle.load(open('diabetes_model.sav', 'rb'))
+diabetes_model = pickle.load(open(r'C:\Users\KIIT\Downloads\multi-disease-predictor-main\multi-disease-predictor-main\diabetes_model.sav', 'rb'))
 
-heart_disease_model = pickle.load(open('heart_disease_model.sav','rb'))
+heart_disease_model = pickle.load(open(r'C:\Users\KIIT\Downloads\multi-disease-predictor-main\multi-disease-predictor-main\heart_disease_model.sav','rb'))
 
-parkinsons_model = pickle.load(open('parkinsons_model.sav', 'rb'))
+parkinsons_model = pickle.load(open(r'C:\Users\KIIT\Downloads\multi-disease-predictor-main\multi-disease-predictor-main\parkinsons_model.sav', 'rb'))
 
 
 
@@ -241,4 +240,3 @@ if (selected == "Parkinsons Prediction"):
           parkinsons_diagnosis = "The person does not have Parkinson's disease"
         
     st.success(parkinsons_diagnosis)
-
